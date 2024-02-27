@@ -4,17 +4,19 @@ const Hero = () => {
             <div className="left-side">
                 <h1>Cooling Solutions for Tomorrow's Needs</h1>
                 <p>
-                    Trust our team of experts to keep your appliances in top-notch condition with
-                    our comprehensive range of services, including refrigerator repair and
-                    electrical troubleshooting, designed to address all your cooling concerns
-                    effectively.
+                    With a commitment to excellence, we strive to exceed your expectations in every
+                    aspect of appliance repair, from diagnosis to completion.
                 </p>
-                <button>Book A Diagnostic</button>
+                <button>
+                    {" "}
+                    <span class="material-symbols-outlined">book</span>
+                    <span>Book A Diagnostic</span>
+                </button>
             </div>
             <div className="right-side">
-                <div className="stacked-image"></div>
-                <div className="stacked-image"></div>
-                <div className="stacked-image"></div>
+                <div className="stacked-image" id="first-img"></div>
+                <div className="stacked-image" id="second-img"></div>
+                <div className="stacked-image" id="third-img"></div>
             </div>
         </main>
     );

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const Nav = () => {
-    const links = ["Home", "Diagnostic", "About", "Contact"];
+const Nav = ({ links }) => {
     const [isLargeScreen, setIsLargeScreen] = useState(false);
 
     useEffect(() => {
@@ -45,7 +44,12 @@ const Nav = () => {
                         alt="logo"
                         style={{ width: "55px" }}
                     />
-                    <img src="src/assets/icons/Menu.svg" alt="menu" style={{ width: "35px" }} />
+                    <img
+                        src="src/assets/icons/Menu.svg"
+                        alt="menu"
+                        style={{ width: "35px" }}
+                        id="menu"
+                    />
                 </>
             )}
         </nav>
